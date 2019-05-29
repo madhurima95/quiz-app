@@ -1,0 +1,31 @@
+<form>
+    <h2>QUIZ GAME : </h2>
+    <div class="panel-group" *ngFor="let data of quizData">
+   
+  
+      <div class="panel  panel-primary">
+        <div class="panel-heading"><span>{{data.ID}}.</span>
+          <span>{{data.question}}</span></div>
+        <div class="panel-body">
+          <!-- <div class="form-control"> -->
+              <select name="qty" class="form-control optionlist" (change)="saveAnswer($event,data)" id="sel1" required>
+                <option value="" selected disabled hidden>Choose here</option>
+                <option  *ngFor="let options of data.anslistobj">{{options}}</option>
+                 
+                </select>
+          <!-- </div> -->
+           
+        </div>
+      </div>
+  
+    </div>
+    <div class="row  content">
+      <div class="col-sm-6">
+          <button type="button" (click)="populateMarks()" class="btn btn-primary btn-sm btn-block">submit</button>
+      </div>
+      <div class="col-sm-6">
+        <input type="reset" class="btn btn-primary btn-sm btn-block" (click)="reset()" value="reset">
+          <!-- <button type="button" class="btn btn-primary btn-sm btn-block">reset</button> -->
+      </div>
+    </div>
+    </form>

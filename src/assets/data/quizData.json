@@ -1,0 +1,15 @@
+[
+    {
+      "ID": 1,"question": "Inventor of c++?", "anslistobj": ["Pavan.c", "James Gosling", "Richie Richie", "Amos.Emmanual"], "answer": "Richie Richie"
+    },
+    {
+      "ID": 2,"question": "Inventor of java?", "anslistobj": ["Nayan.c", "Ärmesh", "Denish Richie", "Kiran.DY"], "answer": "Denish Richie"
+    },
+    {
+      "ID": 3,"question": "how is java?", "anslistobj": ["Easy", "Difficult", "moderate", "nonoe"], "answer": "Easy"
+    },
+    {
+      "ID": 4,"question": "Inventor of cprogram?", "anslistobj": ["a", "b", "c", "d"], "answer": "b"
+    }
+    
+  ]
